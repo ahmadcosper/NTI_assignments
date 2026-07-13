@@ -11,7 +11,8 @@ div {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="password"] {
     width: 25%;
     padding: 5px;
     border: 1px solid #05063b;
