@@ -198,3 +198,43 @@ for (var i=0; i<testthis.length; i++){
 console.log(testcount);
 
 //24. From the grades array [70, 85, 92, 60, 77, 88] , print only the even grades.
+var grades = [70, 85, 92, 60, 77, 88];
+for (var i= 0; i< grades.length; i++){
+    if((grades[i] % 2) == 0) console.log(grades[i]);
+}
+
+//25. Using nested loops, print this stars pattern:
+// *
+// * *
+// * * *
+// * * * *
+
+for(var i=1; i<5 ; i++){
+    var stars ="";
+    for(var j =1; j<=i; j++){
+        stars += "* " ;
+    }
+    console.log(stars);
+}
+
+//26. You have this array of student names: ["ahmed", "sara", "omar", "laila", "hassan"] .
+// Loop through the array, convert each name to uppercase, then print 
+// only the names that start
+// with the letter "A" or "S" , and also print how many names matched.
+var studentss = ["ahmed", "sara", "omar", "laila", "hassan"];
+var times = 0;
+var namesmatched = "";
+
+for (var i = 0; i < studentss.length; i++) {
+    studentss[i] = studentss[i].toUpperCase();
+    
+    if (studentss[i].charAt(0) === "A" || studentss[i].charAt(0) === "S") {
+        times++;
+        namesmatched += studentss[i] + " ";
+    }
+}
+
+console.log(
+`Names starting with 'A' or 'S' are: ${namesmatched}
+Number of names matched= ${times}`
+);
