@@ -5,7 +5,7 @@ document.getElementById("task_header2").innerHTML = "Part B: Numbers & Math (Con
 document.getElementById("task_header3").innerHTML = "Part C: Loops (Console Log output)" ;
 
 // **************** PART A STRINGS ****************
-console.log("\n**************** PART B  NUMBERS & MATH ****************\n")
+console.log("\n**************** PART A STRINGS ****************\n")
 
 // 1-Create a variable with a full name (for example "Ahmed Ali" ). Print how many characters
 //are in that name
@@ -112,10 +112,12 @@ console.log("average number is: "+ average.toFixed(2));
 console.log("\n**************** PART C  Loops ****************\n")
 
 //14. Write a for loop that prints all numbers from 1 to 20.
+var _20 = "";
 for(var i = 1; i<21 ; i++)
 {
-console.log(i);
+_20 += i +" "
 }
+console.log(_20);
 
 //15. Write a for loop that prints only the odd numbers from 1 to 15.
 for(var i = 1; i<16; i+=2){
