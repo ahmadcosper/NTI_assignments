@@ -1,5 +1,5 @@
 //change titles
-document.getElementById("session_day").innerHTML = "Third Day" ; 
+document.getElementById("session_day").innerHTML = "Day 3" ; 
 document.getElementById("task_header").innerHTML = "Part A: Strings (Console Log output)" ; 
 document.getElementById("task_header2").innerHTML = "Part B: Numbers & Math (Console Log output)" ;
 document.getElementById("task_header3").innerHTML = "Part C: Loops (Console Log output)" ;

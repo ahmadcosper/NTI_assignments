@@ -1,5 +1,5 @@
 //change titles
-document.getElementById("session_day").innerHTML = "Fourth Day" ; 
+document.getElementById("session_day").innerHTML = "Day 4" ; 
 document.getElementById("task_header").innerHTML = "Part A: Objects (Console Log output)" ; 
 document.getElementById("task_header2").innerHTML = "Part B: Array Basics (Console Log output)" ;
 document.getElementById("task_header3").innerHTML = "Part C: Array Methods (Console Log output)" ;
