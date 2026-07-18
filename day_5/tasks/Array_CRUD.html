@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Third Day Tasks</title>
+    <link rel="stylesheet" href="d5_tasks.css">
+</head>
+
+<body>
+
+    <div id="div">
+        <h1 id="session_day">Third Day</h1>
+    </div>
+    <div>
+        <h2 id="task_header"> </h2>
+    </div>
+    <div>
+        <h2> Start Building Your Array</h2>
+        <button id="start" onclick="showbar()">Start</button>
+        <label id="hidlabel" for="elements" hidden>Enter Array Elements</label>
+        <input id="elements" type="text" placeholder="separated by ',' => eg: 'el1,el2,el3'" hidden>
+        <button id="enter" hidden onclick="takeArr()">Enter</button><br>
+        <button id="" onclick="reset()">Reset</button>
+    </div>
+    <div id="aa" hidden>
+        <h2> Your array is Here! >></h2>
+        <button id="" onclick="viewArr()">View Array Items</button>
+        <div id="viewer" hidden>
+        </div> <br>
+
+        <button id="" onclick="pushitem()">Add Item to Array</button> <br>
+        <input id="aditem" type="text"> <br>
+
+        <button id="" onclick="editItem()">Modify an Item by its index</button>
+        <input id="editindex" type="text" placeholder="index">
+        <input id="edithere" type="text" placeholder="edit here">
+        <br>
+
+        <button id="" onclick="removeitem()">Remove an item by its index</button>
+        <input id="removeindex" type="text" placeholder="index"><br>
+
+
+
+    </div>
+
+    <script src="ARRAY_CRUD.js"></script>
+</body>
+
+</html>
