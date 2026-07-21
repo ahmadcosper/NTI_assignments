@@ -1,0 +1,242 @@
+body {
+    justify-content: center;
+    background-color: #d8d8dc;
+}
+
+.headers {
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #05063b;
+    background-color: #d7d7d7;
+}
+
+#buttons{
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+   
+    display: flex;
+    gap: 100px;
+    
+}
+#input_panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid #05063b;
+    background-color: #d7d7d7;
+    border-radius: 35px;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 80%;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    border: 1px solid #05063b;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #05063b;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #28a745;
+    cursor: pointer;
+}
+#input_panel input {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    appearance: textfield;
+}
+
+#searchID{
+    width: 25%;
+    padding: 10px 20px;
+    background-color: #05063b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 8px;
+    font-size: 22px;
+}
+#input_panel button {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 10px 30px;
+    background-color: #05063b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+button {
+    width: 25%;
+    padding: 10px 20px;
+    background-color: #05063b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #67639e;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(-1px);
+    /* Pushes the button back down slightly */
+    background-color: #111b21;
+}
+
+#viewer {
+    height: fit-content;
+    width: fit-content;
+}
+
+#graduated {
+    transform: scale(1.5);
+    margin: 10px;
+  cursor: pointer;
+  accent-color: #38ff4c;
+}
+
+#labelg {
+   width: 250px;
+    padding: 5px;
+    border: 1px solid #05063b;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    size: 22px;
+    
+    appearance: textfield;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: #05063b;
+    text-align: center;
+}
+
+h2 {
+    color: #05063b;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+}
+
+
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    border: 2px solid #05063b;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    table-layout: fixed; /* Enforces strict custom widths */
+}
+
+.user-table thead tr {
+    background-color: #05063b;
+    color: #ffffff;
+}
+
+.user-table th, 
+.user-table td {
+    padding: 12px 8px;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+
+.user-table th {
+    border-right-color: #ffffff;
+    font-size: 15px;
+}
+
+.user-table th:last-child,
+.user-table td:last-child {
+    border-right: none;
+}
+
+.user-table th:nth-child(1) { width: 25%; } 
+.user-table th:nth-child(2) { width: 25%; } 
+.user-table th:nth-child(3) { width: 10%; }
+.user-table th:nth-child(4) { width: 15%; } 
+.user-table th:nth-child(5) { width: 25%; } 
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f8f8fa;
+}
+
+.status-true {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.status-false {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-update {
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #05063b;
+    background-color: #ffffff;
+    color: #05063b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete {
+        font-size: 18px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d9534f;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}

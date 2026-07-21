@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Third Day Tasks</title>
+    <link rel="stylesheet" href="DOM_CRUD.css">
+</head>
+
+<body>
+
+    <div class="headers">
+        <h1 id="session_day">Day 5</h1>
+    </div>
+    <div class="headers">
+        <h2 id="task_header"> </h2>
+    </div>
+    
+    <div id="input_panel">
+ 
+  <input id="fnam" type="text" placeholder="First Name">
+  <input id="lnam" type="text" placeholder="Last Name">
+
+
+  <input id="age" type="number" placeholder="Age">
+  
+  
+  <div class="checkbox-wrapper">
+    <label>Is Graduated?</label>
+    <input id="grad" type="checkbox">
+  </div>
+
+  <button id="input_button" onclick="adduser()">Add User</button>
+</div>
+<div id="buttons"> <input type="text" id="searchID" placeholder="Enter Name Here"> <button onclick="searchByName()">Search By Name</button>
+    <button onclick="grads_only()">Graduated Only</button>
+</div>
+
+<div class="table-container" hidden>
+  <table class="user-table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Graduated</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <td>Ahmed</td>
+        <td>Cosper</td>
+        <td>22</td>
+        <td class="status-true">✔</td>
+        <td class="action-buttons">
+          <button class="btn-update">Update</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Hassan</td>
+        <td>21</td>
+        <td class="status-false">✖</td>
+        <td class="action-buttons">
+          <button class="btn-update">Update</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Omar</td>
+        <td>Ali</td>
+        <td>24</td>
+        <td class="status-true">✔</td>
+        <td class="action-buttons">
+          <button class="btn-update">Update</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Laila</td>
+        <td>Ibrahim</td>
+        <td>20</td>
+        <td class="status-false">✖</td>
+        <td class="action-buttons">
+          <button class="btn-update">Update</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
+
+    <script src="DOM_CRUD.js"></script>
+</body>
+
+</html>
