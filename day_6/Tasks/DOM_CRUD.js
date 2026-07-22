@@ -121,7 +121,9 @@ function searchByName(){
             tbody.appendChild(row);
             document.querySelector(".table-container").hidden = false;
         }
+
     });
+    
 }
 
 function update(index){

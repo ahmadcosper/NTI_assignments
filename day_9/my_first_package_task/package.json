@@ -1,0 +1,15 @@
+{
+  "name": "ahmedcosper_my_first_package",
+  "version": "1.0.1",
+  "description": "small package to do simple stuff",
+  "keywords": [
+    "saymyname"
+  ],
+  "license": "ISC",
+  "author": "ahmad_cosper",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
